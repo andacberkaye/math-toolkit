@@ -80,7 +80,7 @@ def Mean(*args):
 def Mod(a = 1,b = 1):
 
     if b == 0:  return "Division by zero is not allowed."
-    else:   return a // b
+    else:   return a % b
     
 def absoluteValue(a = 0):
 
@@ -98,4 +98,13 @@ def Permutation(a = 1 , b = 1):
     return Factorial(a) / Factorial((a - b))
 
 def Combination(a = 1, b = 1):
+
     return Factorial(a) / (Factorial(b)*Factorial((a-b)))
+
+def evenOdd(a = 0):
+
+    if a == 0: return "Number is zero"
+    
+    elif a % 2 == 0 and a != 0: return "Number is even"
+    
+    else: return "Number is odd"
