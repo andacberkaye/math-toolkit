@@ -30,7 +30,7 @@ def Multiplication(*args):
     
     multiplication = 1
     
-    numbers = [i for i in a]
+    numbers = [i for i in args]
      
     for x in numbers:
         multiplication = multiplication * x
