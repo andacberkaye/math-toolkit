@@ -34,3 +34,7 @@ def Multiplication(*a):
     
     return multiplication
 
+def Division(a,b=1):
+    if b == 0:
+        return "Division by zero is not allowed."
+    return a / b
