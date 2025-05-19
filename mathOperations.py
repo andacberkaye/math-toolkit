@@ -123,6 +123,10 @@ def evenOdd(a = 0):
     else: return f"{a} number is odd"
 
 def isPrime(a = 0):
+    
+    if a < 2:
+        return f"{a} is not prime"
+
     for i in range(2, a):
         if a % i == 0:
             return f"{a} isn't prime"
@@ -142,19 +146,14 @@ def perfectNumber(a = 0):
         return f"{a} isn't perfect number"
     
 def ArmstrongNumber(a):
-    while True:
-        digits = len(str(a))
+    if a < 0:
+        return "Enter a positive number"
 
-        if 100 <= a <= 9999:
-            numbers = [int(x) for x in str(a)]
-            addition = sum([r**digits for r in numbers])
+    digits = len(str(a))
+    numbers = [int(x) for x in str(a)]
+    addition = sum([r**digits for r in numbers])
 
-            if addition == a:
-                return f"The number ({a}) you enter is an Armstrong number"
-            else:
-                return f"The number ({a}) you entered is not an Armstrong number"
-            break
-        elif a > 9999:
-            return "Enter a smaller number"
-        else:
-            return "Enter a larger number"
+    if addition == a:
+        return f"The number ({a}) you entered is an Armstrong number"
+    else:
+        return f"The number ({a}) you entered is not an Armstrong number"
