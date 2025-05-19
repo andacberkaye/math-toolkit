@@ -82,3 +82,11 @@ def Mod(a = 1,b = 1):
     if b == 0:  return "Division by zero is not allowed."
     else:   return a // b
     
+def absoluteValue(a = 0):
+
+    if a > 0:
+        return  a - 0
+    elif a < 0:
+        return (-a) - 0
+    else:
+        return 0
