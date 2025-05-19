@@ -127,3 +127,16 @@ def isPrime(a = 0):
         if a % i == 0:
             return "Isn't prime"
     return "Is prime"
+
+def perfectNumber(a = 0):
+    addition = 0
+    for x in range(1,a):
+        if a % x == 0:
+            addition += x
+        else:
+            continue
+
+    if addition == a:
+        return f"{a} is perfect number"
+    else:
+        return f"{a} isn't perfect number"
