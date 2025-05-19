@@ -76,4 +76,9 @@ def Mean(*a):
     else: mean = addition / len(numbers)
 
     return mean
+
+def Mod(a = 1,b = 1):
+
+    if b == 0:  return "Division by zero is not allowed."
+    else:   return a // b
     
