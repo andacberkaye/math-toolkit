@@ -1,17 +1,17 @@
-def Addition(*a):
+def Addition(*args):
     
     addition = 0
     
-    numbers = [i for i in a]
+    numbers = [i for i in args]
      
     for x in numbers:
         addition = addition + x
     
     return addition
 
-def Subtraction(*a):
+def Subtraction(*args):
     
-    numbers = [i for i in a]
+    numbers = [i for i in args]
      
     if len(numbers) == 0:
         return 0
@@ -26,7 +26,7 @@ def Subtraction(*a):
     
     return subtraction
 
-def Multiplication(*a):
+def Multiplication(*args):
     
     multiplication = 1
     
@@ -62,12 +62,12 @@ def Factorial(a = 1):
 
     return conclusion
 
-def Mean(*a):
+def Mean(*args):
     
     mean = 0
     addition = 0
 
-    numbers = [i for i in a]
+    numbers = [i for i in args]
      
     for x in numbers:
         addition = addition + x
