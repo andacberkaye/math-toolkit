@@ -118,15 +118,15 @@ def evenOdd(a = 0):
 
     if a == 0: return "Number is zero"
     
-    elif a % 2 == 0 and a != 0: return "Number is even"
+    elif a % 2 == 0 and a != 0: return f"{a} number is even"
     
-    else: return "Number is odd"
+    else: return f"{a} number is odd"
 
 def isPrime(a = 0):
     for i in range(2, a):
         if a % i == 0:
-            return "Isn't prime"
-    return "Is prime"
+            return f"{a} isn't prime"
+    return f"{a} is prime"
 
 def perfectNumber(a = 0):
     addition = 0
