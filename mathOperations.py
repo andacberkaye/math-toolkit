@@ -96,3 +96,6 @@ def absoluteValue(a = 0):
 def Permutation(a = 1 , b = 1):
 
     return Factorial(a) / Factorial((a - b))
+
+def Combination(a = 1, b = 1):
+    return Factorial(a) / (Factorial(b)*Factorial((a-b)))
