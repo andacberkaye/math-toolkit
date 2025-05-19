@@ -22,3 +22,15 @@ def Subtraction(*a):
             subtraction = subtraction - x
     
     return subtraction
+
+def Multiplication(*a):
+    
+    multiplication = 1
+    
+    numbers = [i for i in a]
+     
+    for x in numbers:
+        multiplication = multiplication * x
+    
+    return multiplication
+
