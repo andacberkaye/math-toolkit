@@ -86,7 +86,13 @@ def absoluteValue(a = 0):
 
     if a > 0:
         return  a - 0
+    
     elif a < 0:
         return (-a) - 0
+    
     else:
         return 0
+    
+def Permutation(a = 1 , b = 1):
+
+    return Factorial(a) / Factorial((a - b))
