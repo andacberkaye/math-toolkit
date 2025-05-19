@@ -49,4 +49,15 @@ def Exponents(a = 1, b = 1):
     return a**b
 
 def Roots(a = 1):
+
     return a ** 0.5
+
+def Factorial(a = 1):
+
+    conclusion = 1
+
+    while a >= 1:
+        conclusion = conclusion * a
+        a -= 1
+
+    return conclusion
