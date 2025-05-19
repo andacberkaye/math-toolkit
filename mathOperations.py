@@ -61,3 +61,19 @@ def Factorial(a = 1):
         a -= 1
 
     return conclusion
+
+def Mean(*a):
+    
+    mean = 0
+    addition = 0
+
+    numbers = [i for i in a]
+     
+    for x in numbers:
+        addition = addition + x
+
+    if len(numbers) == 0: mean = 0
+    else: mean = addition / len(numbers)
+
+    return mean
+    
