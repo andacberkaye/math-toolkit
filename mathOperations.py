@@ -122,3 +122,8 @@ def evenOdd(a = 0):
     
     else: return "Number is odd"
 
+def isPrime(a = 0):
+    for i in range(2, a):
+        if a % i == 0:
+            return "Isn't prime"
+    return "Is prime"
