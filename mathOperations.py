@@ -13,7 +13,10 @@ def Subtraction(*a):
     
     numbers = [i for i in a]
      
-    subtraction = numbers[0]
+    if len(numbers) == 0:
+        return 0
+    else:
+        subtraction = numbers[0]
 
     for x in numbers:
         if subtraction == x:
