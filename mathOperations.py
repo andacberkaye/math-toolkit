@@ -38,9 +38,15 @@ def Multiplication(*a):
     return multiplication
 
 def Division(a = 1,b=1):
+    
     if b == 0 or a == 0:
         return "Division by zero is not allowed."
+    
     return a / b
 
 def Exponents(a = 1, b = 1):
+    
     return a**b
+
+def Roots(a = 1):
+    return a ** 0.5
