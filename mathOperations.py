@@ -182,3 +182,9 @@ def digits_sum(a = 0):
         for y in i:
             addition += int(y)
         return addition
+    
+
+def cascad(a = 0):
+    if a == 0:
+        return "None"
+    return str(len(str(a))) + " cascading"
