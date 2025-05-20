@@ -131,7 +131,6 @@ def armstrong_number(a):
     
 
 def log_base(x = 1, base = 1):
-
     if x <= 0 or base <= 0 or base == 1:
         return "Undefined value"
 
@@ -142,12 +141,12 @@ def log_base(x = 1, base = 1):
 
     while True:
         current = base ** guess
-        fark = current - x
+        difference = current - x
 
-        if fark < 0:
-            fark = -fark
+        if difference < 0:
+            difference = -difference
 
-        if fark < epsilon:
+        if difference < epsilon:
             return guess
         elif current > x:
             high = guess
@@ -155,3 +154,15 @@ def log_base(x = 1, base = 1):
             low = guess                 
 
         guess = (low + high) / 2
+
+
+def pythagoras_three(a = 1, b =1, c = 1):
+    if a <= 0 or b <= 0 or c <= 0:
+        return "Any side of a triangle must be greater than zero"
+    if a > b and a > c:
+        return "This is a Pythagorean triangle" if b**2 + c**2 == a**2 else "This isn't a Pythagorean triangle"
+    elif b > a and b > c:
+        return "This is a Pythagorean triangle" if a**2 + c**2 == b**2 else "This isn't a Pythagorean triangle"
+    else:
+        return "This is a Pythagorean triangle" if a**2 + b**2 == c**2 else "This isn't a Pythagorean triangle"
+
