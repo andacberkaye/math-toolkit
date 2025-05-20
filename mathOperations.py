@@ -190,7 +190,7 @@ def Cascad(a = 0):
     return str(len(str(a))) + " cascading"
 
 
-def Decimal(a = 0):
+def Hexadecimal(a = 0):
     if a == 0:
         return "None"
     digits = "0123456789ABCDEF"
@@ -198,4 +198,24 @@ def Decimal(a = 0):
     while a > 0:
         result = digits[a % 16] + result
         a = a // 16
+    return result
+
+
+def Octal(a = 0):
+    if a == 0:
+        return "None"
+    result = ""
+    while a > 0:
+        result = str(a % 8) + result
+        a = a // 8
+    return result
+
+
+def Binary(a = 0):
+    if a == 0:
+        return "None"
+    result = ""
+    while a > 0:
+        result = str(a % 2) + result
+        a = a // 2
     return result
