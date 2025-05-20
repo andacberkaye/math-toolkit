@@ -237,3 +237,33 @@ def Ebob(a = 0, b = 0):
             ebob = i
         i += 1
     return ebob
+
+
+def ekok_bulma(a = 0,b = 0):
+    if a == 0 or b == 0:
+        return "None"
+    i = 2
+    ekok = 1
+    while True:
+        if (a % i == 0 and b % i == 0):
+            ekok *= i
+
+            a //= i
+            b //= i
+
+
+        elif (a % i ==  0 and b % i != 0):
+            ekok *= i
+
+            a //= i
+
+
+        elif (a % i != 0 and b % i == 0):
+            ekok *= i
+
+            b //= i
+        else:
+            i += 1
+        if (a == 1 and b == 1):
+            break
+    return ekok
