@@ -171,3 +171,14 @@ def Hypotenuse(a = 1, b = 1):
     if a == 0 or b == 0:
         return "Any side of a triangle must be greater than zero"
     return f"Hypotenuse: {(a**2 + b**2) ** 0.5}"
+
+
+def digits_sum(a = 0):
+    if a == 0:
+        return "None"
+    else:
+        i = [x for x in str(a)]
+        addition = 0
+        for y in i:
+            addition += int(y)
+        return addition
