@@ -166,3 +166,8 @@ def pythagoras_three(a = 1, b =1, c = 1):
     else:
         return "This is a Pythagorean triangle" if a**2 + b**2 == c**2 else "This isn't a Pythagorean triangle"
 
+
+def Hypotenuse(a = 1, b = 1):
+    if a == 0 or b == 0:
+        return "Any side of a triangle must be greater than zero"
+    return f"Hypotenuse: {(a**2 + b**2) ** 0.5}"
