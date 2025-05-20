@@ -130,28 +130,28 @@ def armstrong_number(a):
         return f"The number ({a}) you entered is not an Armstrong number"
     
 
-def log_base(x, base):
-    import powerModule as pw
-    
+def log_base(x = 1, base = 1):
+
+    if x <= 0 or base <= 0 or base == 1:
+        return "Undefined value"
+
     low = 0.0
-    high = x
-    guess = (low + high) / 2
+    high = max(1.0, x)  # burada düzeltme
     epsilon = 0.00001
+    guess = (low + high) / 2
 
     while True:
-        current = pw.power(base, guess)
-        difference = current - x
+        current = base ** guess
+        fark = current - x
 
-        if difference > 0:
-            difference = difference
-        else:
-            difference = -difference
+        if fark < 0:
+            fark = -fark
 
-        if difference < epsilon:
+        if fark < epsilon:
             return guess
-        elif current < x:
-            low = guess
-        else:
+        elif current > x:
             high = guess
+        else:
+            low = guess                 
 
         guess = (low + high) / 2
