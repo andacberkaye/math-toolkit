@@ -224,3 +224,16 @@ def Binary(a = 0):
 def reverse_number(a = 0):
     a = str(a)
     return a[::-1]
+
+
+def Ebob(a = 0, b = 0):
+    if a == 0 or b == 0:
+        return "None"
+    i = 1
+    ebob = 1
+
+    while (i <= a and i <= b):
+        if a % i == 0 and b % i == 0:
+            ebob = i
+        i += 1
+    return ebob
