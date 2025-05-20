@@ -219,3 +219,8 @@ def Binary(a = 0):
         result = str(a % 2) + result
         a = a // 2
     return result
+
+
+def reverse_number(a = 0):
+    a = str(a)
+    return a[::-1]
