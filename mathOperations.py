@@ -184,7 +184,18 @@ def digits_sum(a = 0):
         return addition
     
 
-def cascad(a = 0):
+def Cascad(a = 0):
     if a == 0:
         return "None"
     return str(len(str(a))) + " cascading"
+
+
+def Decimal(a = 0):
+    if a == 0:
+        return "None"
+    digits = "0123456789ABCDEF"
+    result = ""
+    while a > 0:
+        result = digits[a % 16] + result
+        a = a // 16
+    return result
