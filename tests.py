@@ -28,8 +28,8 @@ def run_tests():
     assert octal(10) == "12", "Octal failed"
     assert binary(5) == "101", "Binary failed"
     assert reverse_number(1234) == "4321", "Reverse number failed"
-    assert ebob(12, 18) == 6, "EBOB failed"
-    assert ekok(4, 6) == 12, "EKOK failed"
+    assert gcd(12, 18) == 6, "EBOB failed"
+    assert lcm(4, 6) == 12, "EKOK failed"
 
     print("✅ All tests passed successfully!")
 
