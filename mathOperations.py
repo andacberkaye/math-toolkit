@@ -1,4 +1,4 @@
-def Addition(*args):
+def addition(*args):
     addition = 0
     numbers = [i for i in args]
     for x in numbers:
@@ -6,7 +6,7 @@ def Addition(*args):
     return addition
 
 
-def Subtraction(*args):    
+def subtraction(*args):    
     numbers = [i for i in args]
     if len(numbers) == 0:
         return 0
@@ -20,7 +20,7 @@ def Subtraction(*args):
     return subtraction
 
 
-def Multiplication(*args):    
+def multiplication(*args):    
     multiplication = 1
     numbers = [i for i in args]
     for x in numbers:
@@ -28,21 +28,21 @@ def Multiplication(*args):
     return multiplication
 
 
-def Division(a = 1,b=1):    
+def division(a = 1,b=1):    
     if b == 0:
         return "Division by zero is not allowed."
     return a / b
 
 
-def Exponents(a = 1, b = 1):    
+def exponents(a = 1, b = 1):    
     return a**b
 
 
-def Roots(a = 1):
+def roots(a = 1):
     return a ** 0.5
 
 
-def Factorial(a = 1):
+def factorial(a = 1):
     if a < 0:
         return "Factorial is undefined for negative numbers."
     conclusion = 1
@@ -52,7 +52,7 @@ def Factorial(a = 1):
     return conclusion
 
 
-def Mean(*args):    
+def mean(*args):    
     mean = 0
     addition = 0
     numbers = [i for i in args]
@@ -63,7 +63,7 @@ def Mean(*args):
     return mean
 
 
-def Mod(a = 1,b = 1):
+def mod(a = 1,b = 1):
     if b == 0:  return "Division by zero is not allowed."
     else:   return a % b
     
@@ -74,20 +74,20 @@ def absolute_value(a = 0):
     else:   return 0
     
 
-def Permutation(a = 1 , b = 1):
+def permutation(a = 1 , b = 1):
     if a < 0 or b < 0:
         return "Permutation is undefined for negative numbers."
     if a < b:
         return "Permutation is undefined when a < b."
-    return Factorial(a) / Factorial((a - b))
+    return factorial(a) / factorial((a - b))
 
 
-def Combination(a = 1, b = 1):
+def combination(a = 1, b = 1):
     if a < 0 or b < 0:
         return "Combination is undefined for negative numbers."
     if a < b:
         return "Combination is undefined when a < b."
-    return Factorial(a) / (Factorial(b)*Factorial((a-b)))
+    return factorial(a) / (factorial(b)*factorial((a-b)))
 
 
 def even_odd(a = 0):
@@ -167,7 +167,7 @@ def pythagoras_three(a = 1, b =1, c = 1):
         return "This is a Pythagorean triangle" if a**2 + b**2 == c**2 else "This isn't a Pythagorean triangle"
 
 
-def Hypotenuse(a = 1, b = 1):
+def hypotenuse(a = 1, b = 1):
     if a == 0 or b == 0:
         return "Any side of a triangle must be greater than zero"
     return f"Hypotenuse: {(a**2 + b**2) ** 0.5}"
@@ -184,13 +184,13 @@ def digits_sum(a = 0):
         return addition
     
 
-def Cascad(a = 0):
+def cascad(a = 0):
     if a == 0:
         return "None"
     return str(len(str(a))) + " cascading"
 
 
-def Hexadecimal(a = 0):
+def hexadecimal(a = 0):
     if a == 0:
         return "None"
     digits = "0123456789ABCDEF"
@@ -201,7 +201,7 @@ def Hexadecimal(a = 0):
     return result
 
 
-def Octal(a = 0):
+def octal(a = 0):
     if a == 0:
         return "None"
     result = ""
@@ -211,7 +211,7 @@ def Octal(a = 0):
     return result
 
 
-def Binary(a = 0):
+def binary(a = 0):
     if a == 0:
         return "None"
     result = ""
@@ -226,7 +226,7 @@ def reverse_number(a = 0):
     return a[::-1]
 
 
-def Ebob(a = 0, b = 0):
+def ebob(a = 0, b = 0):
     if a == 0 or b == 0:
         return "None"
     i = 1
@@ -239,7 +239,7 @@ def Ebob(a = 0, b = 0):
     return ebob
 
 
-def ekok_bulma(a = 0,b = 0):
+def ekok(a = 0,b = 0):
     if a == 0 or b == 0:
         return "None"
     i = 2
