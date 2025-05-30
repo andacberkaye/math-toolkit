@@ -480,7 +480,7 @@ def reverse_number(a = 0):
     return a[::-1]
 
 
-def ebob(a = 0, b = 0):
+def gcd(a = 0, b = 0):
     """
     Calculates the greatest common divisor (GCD) of two numbers without using any external module.
 
@@ -503,7 +503,7 @@ def ebob(a = 0, b = 0):
     return ebob
 
 
-def ekok(a = 0,b = 0):
+def lcm(a = 0,b = 0):
     """
     Calculates the least common multiple (LCM) of two numbers without using any external module.
 
