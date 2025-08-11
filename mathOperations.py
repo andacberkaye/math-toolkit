@@ -494,13 +494,13 @@ def gcd(a = 0, b = 0):
     if a == 0 or b == 0:
         return "None"
     i = 1
-    ebob = 1
+    gcd = 1
 
     while (i <= a and i <= b):
         if a % i == 0 and b % i == 0:
-            ebob = i
+            gcd = i
         i += 1
-    return ebob
+    return gcd
 
 
 def lcm(a = 0,b = 0):
@@ -517,27 +517,27 @@ def lcm(a = 0,b = 0):
     if a == 0 or b == 0:
         return "None"
     i = 2
-    ekok = 1
+    lcm = 1
     while True:
         if (a % i == 0 and b % i == 0):
-            ekok *= i
+            lcm *= i
 
             a //= i
             b //= i
 
 
         elif (a % i ==  0 and b % i != 0):
-            ekok *= i
+            lcm *= i
 
             a //= i
 
 
         elif (a % i != 0 and b % i == 0):
-            ekok *= i
+            lcm *= i
 
             b //= i
         else:
             i += 1
         if (a == 1 and b == 1):
             break
-    return ekok
+    return lcm
