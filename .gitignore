@@ -2,3 +2,14 @@
 __pycache__/
 *.pyc
 deneme.py
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Python cache
+__pycache__/
+
+# IDE crap
+.vscode/
+*.pyc
